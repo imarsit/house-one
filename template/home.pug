@@ -1,0 +1,477 @@
+extends layout
+
+block content
+	include lib/header	
+	// banner
+	#js-main-slider.pogoSlider
+		.pogoSlider-slide(data-transition='blocksReveal', data-duration='1000', style='background-image:url(/public/images/home/banner1.jpg);')
+			.pogoSlider-slide-element
+				h3 房地产
+				p
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dignissim, elit non fermentum dictum, risus justo mattis quam, in hendrerit sapien ex vel turpis. Maecenas dictum sagittis imperdiet.
+				a.btn.btn-circle.page-scroll(href='#about')
+					i.fa.fa-angle-double-down.animated
+		.pogoSlider-slide(data-transition='blocksReveal', data-duration='1000', style='background-image:url(/public/images/home/banner2.jpg);')
+			.pogoSlider-slide-element
+				h3 夏季别墅的真实世界
+				p
+					| Fusce ac lacus cursus, viverra dolor eget, convallis libero. Nunc eu nisi eu sapien consequat tempus. Donec pretium sapien sit amet est sagittis feugiat.  Fusce ac lacus cursus, viverra dolor eget, convallis libero.
+				a.btn.btn-circle.page-scroll(href='#about')
+					i.fa.fa-angle-double-down.animated
+		.pogoSlider-slide(data-transition='blocksReveal', data-duration='1000', style='background-image:url(/public/images/home/banner3.jpg);')
+			.pogoSlider-slide-element
+				h3 夏季别墅的真实世界
+				p
+					| Aenean hendrerit lacus ac ex mattis, at dapibus libero malesuada. Aliquam quis mollis leo. Fusce tempor elementum vehicula. Morbi dignissim vehicula diam et lacinia. Morbi eu commodo ligula.
+				a.btn.btn-circle.page-scroll(href='#about')
+					i.fa.fa-angle-double-down.animated
+		.pogoSlider-slide(data-transition='blocksReveal', data-duration='1000', style='background-image:url(/public/images/home/banner4.jpg);')
+			.pogoSlider-slide-element
+				h3 夏季别墅的真实世界
+				p
+					| Cras a urna lobortis, facilisis urna quis, faucibus arcu. Ut laoreet orci ac dapibus sagittis. Sed elementum sem ligula, ac feugiat elit congue vel. Fusce porta fermentum egestas.
+				a.btn.btn-circle.page-scroll(href='#about')
+					i.fa.fa-angle-double-down.animated
+	
+	
+	// 关于我们
+	section#about.about-w3ls
+		.container-fluid
+			.col-lg-6.col-md-6.col-sm-6.w3l1(data-aos='zoom-in')
+				h2 关于我们
+				p
+					| 南宁火星人信息科技有限公司由留学人员杜聪回国创办，是一家致力于电子商务系统研发及提供相关配套增值服务的企业，公司在英国伦敦设有分部。公司将凭借总经理多年在英国为多家电子商务和网络媒体公司提供咨询服务的经验，能够为正在从事或即将设计电子商务的企业提供配套的增值性的咨询服务，其中包括电子商务整合方案策划，B2B,B2C整体解决方案，移动APP解决方案，网络媒体市场营销，网络品牌及形象推广，网络用户调研，数据采集和经济模型分析，项目预算与评估，财务分析和融资方案等。
+			.col-lg-6.col-md-6.col-sm-6.w3l2(data-aos='zoom-in')
+				.hover01.column
+					div
+						figure
+						img.agile1.img-responsive(src='/public/images/home/about-img1.jpg', alt='')
+				img.agile2.img-responsive(src='/public/images/home/about-img2.jpg', alt='', data-aos='flip-up')
+			.clearfix
+
+	// 服务
+	section#service.service-agileinfo
+		.container
+			h3.text-center 服务指南
+			.col-lg-3.col-md-3.col-sm-6.wthree1(data-aos='zoom-in')
+				.w3-agileits
+					img.img-responsive(src='/public/images/home/serv-img1.png', alt='')
+					h4 Lorem ipsum dolor
+					p
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend neque est, non consequat arcu rutrum aliquam. Morbi sed varius ipsum, eget pulvinar lorem.
+			.col-lg-3.col-md-3.col-sm-6.wthree2(data-aos='zoom-in')
+				.w3-agileits
+					img.img-responsive(src='/public/images/home/serv-img2.png', alt='')
+					h4 Adipiscing Elit
+					p
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend neque est, non consequat arcu rutrum aliquam. Morbi sed varius ipsum, eget pulvinar lorem.
+			.col-lg-3.col-md-3.col-sm-6.wthree3(data-aos='zoom-in')
+				.w3-agileits
+					img.img-responsive(src='/public/images/home/serv-img3.png', alt='')
+					h4 Integer eleifend
+					p
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend neque est, non consequat arcu rutrum aliquam. Morbi sed varius ipsum, eget pulvinar lorem.
+			.col-lg-3.col-md-3.col-sm-6.wthree4(data-aos='zoom-in')
+				.w3-agileits
+					img.img-responsive(src='/public/images/home/serv-img4.png', alt='')
+					h4 rutrum aliquam
+					p
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eleifend neque est, non consequat arcu rutrum aliquam. Morbi sed varius ipsum, eget pulvinar lorem.
+			.clearfix
+
+	// 专业
+	section.special-w3ls
+		.container
+			.col-lg-5.col-md-5.col-sm-5.special-agileits1(data-aos='flip-right')
+				.hover01.column
+					div
+						figure
+							img.img-responsive(src='/public/images/home/special-img.jpg', alt='')
+			.col-lg-7.col-md-7.col-sm-7.special-agileits2
+				h3 企业特色
+				p.special-agile1(data-aos='flip-up') Lorem ipsum dolor sit amet.
+				p.special-agile2(data-aos='flip-up')
+					| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sodales ornare mollis. Praesent mauris tortor, efficitur in mauris accumsan, suscipit ullamcorper orci. Sed eu velit cursus, rhoncus orci ut, placerat ipsum. Ut et ornare ante.
+				.entry-content(data-aos='flip-up')
+					#scrollerContainer3
+						ul.Settings(style='display:none;')
+							li.Width 901
+							li.Height 238
+							li.BgColor 000000
+							li.BgAlpha 100
+							li.BgBorderSize 1
+							li.BgBorderColor 000000
+							li.ThumbnailsOrder random
+							li.ResponsiveEnabled true
+							li.UltraResponsiveEnabled false
+							li.ThumbnailsOrder random
+							li.ThumbnailsPosition horizontal
+							li.ThumbnailsBgColor 000000
+							li.ThumbnailsBgAlpha 0
+							li.ThumbnailsBorderSize 0
+							li.ThumbnailsBorderColor e0e0e0
+							li.ThumbnailsSpacing 9
+							li.ThumbnailsMarginTop 10
+							li.ThumbnailsMarginRight 0
+							li.ThumbnailsMarginBottom 10
+							li.ThumbnailsMarginLeft 0
+							li.ThumbnailsPaddingTop 0
+							li.ThumbnailsPaddingRight 0
+							li.ThumbnailsPaddingBottom 0
+							li.ThumbnailsPaddingLeft 0
+							li.ThumbnailsInfo label
+							li.ThumbnailsNavigationEasing linear
+							li.ThumbnailsNavigationLoop false
+							li.ThumbnailsNavigationMouseEnabled false
+							li.ThumbnailsNavigationScrollEnabled true
+							li.ThumbnailsScrollPosition bottom/right
+							li.ThumbnailsScrollSize 7
+							li.ThumbnailsScrollScrubColor afbd21
+							li.ThumbnailsScrollBarColor 606060
+							li.ThumbnailsNavigationArrowsEnabled true
+							li.ThumbnailsNavigationArrowsNoItemsSlide 3
+							li.ThumbnailsNavigationArrowsSpeed 600
+							li.ThumbnailsNavigationPrev images/ThumbnailsPrev3.png
+							li.ThumbnailsNavigationPrevHover images/ThumbnailsPrevHover3.png
+							li.ThumbnailsNavigationPrevDisabled images/ThumbnailsPrevDisabled3.png
+							li.ThumbnailsNavigationNext images/ThumbnailsNext3.png
+							li.ThumbnailsNavigationNextHover images/ThumbnailsNextHover3.png
+							li.ThumbnailsNavigationNextDisabled images/ThumbnailsNextDisabled3.png
+							li.ThumbnailLoader images/ThumbnailLoader3.gif
+							li.ThumbnailWidth 262
+							li.ThumbnailHeight 200
+							li.ThumbnailAlpha 90
+							li.ThumbnailAlphaHover 100
+							li.ThumbnailBgColor 000000
+							li.ThumbnailBgColorHover 000000
+							li.ThumbnailBorderSize 0
+							li.ThumbnailBorderColor d0d0d0
+							li.ThumbnailBorderColorHover 303030
+							li.ThumbnailPaddingTop 0
+							li.ThumbnailPaddingRight 0
+							li.ThumbnailPaddingBottom 0
+							li.ThumbnailPaddingLeft 0
+							li.LightboxEnabled true
+							li.LightboxDisplayTime 600
+							li.LightboxWindowColor 000000
+							li.LightboxWindowAlpha 80
+							li.LightboxLoader images/LightboxLoader3.gif
+							li.LightboxBgColor 202020
+							li.LightboxBgAlpha 100
+							li.LightboxBorderSize 2
+							li.LightboxBorderColor 000000
+							li.LightboxCaptionTextColor 999999
+							li.LightboxMarginTop 30
+							li.LightboxMarginRight 30
+							li.LightboxMarginBottom 30
+							li.LightboxMarginLeft 30
+							li.LightboxPaddingTop 10
+							li.LightboxPaddingRight 10
+							li.LightboxPaddingBottom 10
+							li.LightboxPaddingLeft 10
+							li.LightboxNavigationPrev images/LightboxPrev3.png
+							li.LightboxNavigationPrevHover images/LightboxPrevHover3.png
+							li.LightboxNavigationNext images/LightboxNext3.png
+							li.LightboxNavigationNextHover images/LightboxNextHover3.png
+							li.LightboxNavigationClose images/LightboxClose3.png
+							li.LightboxNavigationCloseHover images/LightboxCloseHover3.png
+							li.LightboxNavigationInfoBgColor 202020
+							li.LightboxNavigationInfoTextColor ffffff
+							li.LightboxNavigationDisplayTime 600
+							li.LightboxNavigationTouchDeviceSwipeEnabled true
+							li.SocialShareEnabled false
+							li.SocialShareLightbox images/SocialShareLightbox3.png
+							li.TooltipBgColor ffffff
+							li.TooltipStrokeColor 000000
+							li.TooltipTextColor 000000
+							li.LabelPosition top
+							li.LabelAlwaysVisible false
+							li.LabelUnderHeight 50
+							li.LabelBgColor 000000
+							li.LabelBgAlpha 80
+							li.LabelTextColor ffffff
+							li.SlideshowEnabled false
+							li.SlideshowTime 5000
+							li.SlideshowLoop false
+						ul.Content(style='display:none;')
+							li
+								img.image(src='/public/images/home/special-img1-1.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit.', title='Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+								img.thumb(src='/public/images/home/special-img1.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit.', title='Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+								span.title Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								span.caption
+								span.media
+								span.lightboxMedia
+								span.link
+								span.target _blank
+							li
+								img.image(src='/public/images/home/special-img2-2.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit.', title='Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+								img.thumb(src='/public/images/home/special-img2.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit.', title='Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+								span.title Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								span.caption
+								span.media
+								span.lightboxMedia
+								span.link
+								span.target _blank
+							li
+								img.image(src='/public/images/home/special-img3-3.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit.', title='Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+								img.thumb(src='/public/images/home/special-img3.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit.', title='Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+								span.Title Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								span.caption
+								span.media
+								span.lightboxMedia
+								span.link
+								span.target _blank
+							li
+								img.image(src='/public/images/home/special-img1-1.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit.', title='Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+								img.thumb(src='/public/images/home/special-img1.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit.', title='Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+								span.Title Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								span.caption
+								span.media
+								span.lightboxMedia
+								span.link
+								span.target _blank
+							li
+								img.image(src='/public/images/home/special-img2-2.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit.', title='Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+								img.thumb(src='/public/images/home/special-img2.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit.', title='Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+								span.Title Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								span.caption
+								span.media
+								span.lightboxMedia
+								span.link
+								span.target _blank
+							li
+								img.image(src='/public/images/home/special-img3-3.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit.', title='Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+								img.thumb(src='/public/images/home/special-img3.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit.', title='Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+								span.Title Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								span.caption
+								span.media
+								span.lightboxMedia
+								span.link
+								span.target _blank
+							li
+								img.image(src='/public/images/home/special-img2-2.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit.', title='Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+								img.thumb(src='/public/images/home/special-img2.jpg', alt='Lorem ipsum dolor sit amet, consectetur adipiscing elit.', title='Lorem ipsum dolor sit amet, consectetur adipiscing elit.')
+								span.Title Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+								span.caption
+								span.media
+								span.lightboxMedia
+								span.link
+								span.target _blank
+			.clearfix
+	// 信息段
+	section.info-agileinfo
+		.container
+			h3.text-center 企业信息
+			.col-lg-8.col-md-8.info-w3ls1
+				.info-agile1(data-aos='flip-up')
+					.col-lg-6.col-md-6.col-sm-6.info-w3-agile1
+						.hover01.column
+							div
+								figure
+									img.img-responsive(src='/public/images/home/info-img1.jpg', alt='')
+					.col-lg-6.col-md-6.col-sm-6.info-w3-agile1
+						.agileits-w3layouts
+							h4 Lorem ipsum dolor sit amet.
+							p
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sit amet vulputate ex. Mauris felis dui, venenatis auctor iaculis posuere, aliquam in augue. Ut feugiat non arcu in bibendum.
+					.clearfix
+				.info-agile2(data-aos='flip-down')
+					.col-lg-6.col-md-6.col-sm-6.info-w3-agile1
+						.agileits-w3layouts
+							h4 Morbi sed varius ipsum eget.
+							p
+							| In hac habitasse platea dictumst. Vestibulum tellus magna, scelerisque id ultricies sit amet, porttitor id elit. Nullam iaculis aliquet arcu, ac vehicula ipsum mollis at.
+					.col-lg-6.col-md-6.col-sm-6.info-w3-agile1
+						.hover01.column
+							div
+								figure
+									img.img-responsive(src='/public/images/home/info-img3.jpg', alt='')
+					.clearfix
+			.col-lg-4.col-md-4.info-w3ls2
+				.info-agile3(data-aos='flip-left')
+					.col-lg-12.col-md-12.col-sm-12.info-w3-agile2
+						.hover01.column
+							div
+								figure
+									img.img-responsive(src='/public/images/home/info-img2.jpg', alt='')
+					.col-lg-12.col-md-12.col-sm-12.info-w3-agile2
+						.agileits-w3layouts
+							h4 Phasellus pharetra magna.
+							p
+							| Aliquam eget suscipit lorem, a vehicula neque. Duis a ultricies dui, non dapibus diam. Cras libero lacus, volutpat vitae euismod at, pellentesque sit amet leo. Proin nec viverra metus.
+					.clearfix
+			.clearfix
+	// 展览
+	section#gallery.gallery-w3ls
+		.container
+			h3.text-center 经典案例
+			.content
+				.chroma-gallery.mygallery
+					img.img-responsive(src='/public/images/home/gallery-img1.jpg', alt='Click', data-largesrc='/public/images/gallery-img1-1.jpg')
+					img.img-responsive(src='/public/images/home/gallery-img2.jpg', alt='Click', data-largesrc='/public/images/gallery-img2-2.jpg')
+					img.img-responsive(src='/public/images/home/gallery-img3.jpg', alt='Click', data-largesrc='/public/images/gallery-img3-3.jpg')
+					img.img-responsive(src='/public/images/home/gallery-img4.jpg', alt='Click', data-largesrc='/public/images/gallery-img4-4.jpg')
+					img.img-responsive(src='/public/images/home/gallery-img5.jpg', alt='Click', data-largesrc='/public/images/gallery-img5-5.jpg')
+					img.img-responsive(src='/public/images/home/gallery-img6.jpg', alt='Click', data-largesrc='/public/images/gallery-img6-6.jpg')
+					img.img-responsive(src='/public/images/home/gallery-img7.jpg', alt='Click', data-largesrc='/public/images/gallery-img7-7.jpg')
+					img.img-responsive(src='/public/images/home/gallery-img8.jpg', alt='Click', data-largesrc='/public/images/gallery-img8-8.jpg')
+					img.img-responsive(src='/public/images/home/gallery-img9.jpg', alt='Click', data-largesrc='/public/images/gallery-img9-9.jpg')
+	
+	// 团队
+	section#team.team-w3ls
+		.container
+			h3.text-center 团队介绍
+			.col-lg-6.col-md-6.col-sm-12.team-info1(data-aos='zoom-in')
+				.team-agileits
+					.col-xs-4.team-w3-agile1
+						.hover01.column
+							div
+								figure
+									img.img-responsive(src='/public/images/home/team-img1.jpg', alt='')
+						ul.social-icons1
+							li
+								a(href='#')
+									i.fa.fa-facebook
+							li
+								a(href='#')
+									i.fa.fa-twitter
+							li
+								a(href='#')
+									i.fa.fa-google-plus
+					.col-xs-8.team-w3-agile2
+						h4 Elizabeth
+						p.team-agile1 Founder
+						p.team-agile2
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis imperdiet sem. Nunc eget urna eu libero vulputate lacinia.
+					.clearfix
+			.col-lg-6.col-md-6.col-sm-12.team-info1(data-aos='zoom-in')
+				.team-agileits
+					.col-xs-4.team-w3-agile1
+						.hover01.column
+							div
+								figure
+									img.img-responsive(src='/public/images/home/team-img2.jpg', alt='')
+						ul.social-icons1
+							li
+								a(href='#')
+									i.fa.fa-facebook
+							li
+								a(href='#')
+									i.fa.fa-twitter
+							li
+								a(href='#')
+									i.fa.fa-google-plus
+					.col-xs-8.team-w3-agile2
+						h4 Johnny Cage
+						p.team-agile1 Chairman
+						p.team-agile2
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis imperdiet sem. Nunc eget urna eu libero vulputate lacinia.
+					.clearfix
+			.col-lg-6.col-md-6.col-sm-12.team-info2(data-aos='zoom-in')
+				.team-agileits
+					.col-xs-4.team-w3-agile1
+						.hover01.column
+							div
+								figure
+									img.img-responsive(src='/public/images/home/team-img3.jpg', alt='')
+						ul.social-icons1
+							li
+								a(href='#')
+									i.fa.fa-facebook
+							li
+								a(href='#')
+									i.fa.fa-twitter
+							li
+								a(href='#')
+									i.fa.fa-google-plus
+					.col-xs-8.team-w3-agile2
+						h4 Kate Winslet
+						p.team-agile1 Manager
+						p.team-agile2
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis imperdiet sem. Nunc eget urna eu libero vulputate lacinia.
+					.clearfix
+			.col-lg-6.col-md-6.col-sm-12.team-info2(data-aos='zoom-in')
+				.team-agileits
+					.col-xs-4.team-w3-agile1
+						.hover01.column
+							div
+								figure
+									img.img-responsive(src='/public/images/home/team-img4.jpg', alt='')
+						ul.social-icons1
+							li
+								a(href='#')
+									i.fa.fa-facebook
+							li
+								a(href='#')
+									i.fa.fa-twitter
+							li
+								a(href='#')
+									i.fa.fa-google-plus
+					.col-xs-8.team-w3-agile2
+						h4 Britney Spears
+						p.team-agile1 Director
+						p.team-agile2
+							| Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis imperdiet sem. Nunc eget urna eu libero vulputate lacinia.
+					.clearfix
+			.clearfix
+	// 地图
+	.map(data-aos='zoom-in')
+		iframe.googlemaps(src='https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d380510.6741687111!2d-88.01234121699822!3d41.83390417061058!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1455598377120', style='border:0', allowfullscreen='')
+	// 联系
+	section#contact.contact-w3ls
+		.container
+			.col-lg-6.col-md-6.col-sm-6.contact-w3-agile1(data-aos='flip-right')
+				h3 联系我们 :)
+				p.contact-agile1
+					strong Phone :
+					|  0771-3216270
+				p.contact-agile1
+					strong 邮箱 :
+					a(href='mailto:info@mars-it.net.com') info@mars-it.net
+				p.contact-agile1
+					strong 地址 :
+					|  广西南宁市科园大道东五路4号南宁软件园1楼
+				ul.social-icons2
+					li
+						a(href='#')
+							i.fa.fa-facebook
+					li
+						a(href='#')
+							i.fa.fa-twitter
+					li
+						a(href='#')
+							i.fa.fa-linkedin
+					li
+						a(href='#')
+							i.fa.fa-google-plus
+			.col-lg-6.col-md-6.col-sm-6.contact-w3-agile2(data-aos='flip-left')
+				.contact-agileits
+					h4 联系我们
+					p.contact-agile2 新用户注册
+					form#contactForm(action='#', method='post', name='sentMessage', novalidate='')
+						.control-group.form-group
+							.controls
+								label.contact-p1 姓名:
+								input#name.form-control(type='text', name='name', required='', data-validation-required-message='Please enter your name.')
+								p.help-block
+						.control-group.form-group
+							.controls
+								label.contact-p1 联系方式:
+								input#phone.form-control(type='tel', name='phone', required='', data-validation-required-message='Please enter your phone number.')
+								p.help-block
+						.control-group.form-group
+							.controls
+								label.contact-p1 邮箱地址:
+								input#email.form-control(type='email', name='email', required='', data-validation-required-message='Please enter your email address.')
+								p.help-block
+						#success
+						button.btn.btn-primary(type='submit') 确认发送
+			.clearfix
+	// 页脚
+	.footer
+		.container
+			p.text-center
+				| Copyright © 2018火星云 Designed By Mars-IT All Rights Reserved
+	a.cd-top(href='#0') Top
+
+

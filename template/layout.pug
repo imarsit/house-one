@@ -1,0 +1,45 @@
+doctype html
+html
+	head
+
+		meta(name='keywords', content=keywords || site.keywords)
+		meta(name='description', content=description || site.description)
+
+		meta(name='viewport', content='width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no')
+		meta(name='renderer', content='webkit')
+
+		link(rel='stylesheet', href='/public/stylesheets/style.css')
+		link(rel='shortcut icon', href='/public/images/favicon.ico')
+
+	body
+
+
+		block content
+
+	script(src='/public/javascripts/jquery.min.js')
+	script(src='/public/javascripts/bootstrap.min.js')
+	script(src='/public/javascripts/smoothscroll.js')
+	script(src='/public/javascripts/jquery.easing.min.js')
+	script(src='/public/javascripts/grayscale.js')
+	script(src='/public/javascripts/top.js')
+	script(src='/public/javascripts/jqBootstrapValidation.js')
+	script(src='/public/javascripts/contact_me.js')
+	script(src='/public/javascripts/modernizr-chrg.min.js')
+	script(src='/public/javascripts/masonry.min.js')
+	script(src='/public/javascripts/chromagallery.js')
+	script(type='text/javascript').
+		$(document).ready(function()
+		{
+		$(".mygallery").chromaGallery();
+		});
+
+	script(type='text/JavaScript', src='public/javascripts/jquery-ui.min.js')
+	script(type='text/JavaScript', src='public/javascripts/jquery.dop.ThumbnailScroller.js')
+	script(src='/public/javascripts/jquery.pogo-slider.min.js')
+	script(src='/public/javascripts/main.js')
+	//banner slider
+	script(src='/public/javascripts/aos.js')
+	script(src='/public/javascripts/index.js')
+
+
+	block script
